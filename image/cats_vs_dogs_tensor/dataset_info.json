@@ -1,0 +1,59 @@
+{
+  "builder_name": "cats_vs_dogs",
+  "citation": "@Inproceedings (Conference){asirra-a-captcha-that-exploits-interest-aligned-manual-image-categorization,\n    author = {Elson, Jeremy and Douceur, John (JD) and Howell, Jon and Saul, Jared},\n    title = {Asirra: A CAPTCHA that Exploits Interest-Aligned Manual Image Categorization},\n    booktitle = {Proceedings of 14th ACM Conference on Computer and Communications Security (CCS)},\n    year = {2007},\n    month = {October},\n    publisher = {Association for Computing Machinery, Inc.},\n    url = {https://www.microsoft.com/en-us/research/publication/asirra-a-captcha-that-exploits-interest-aligned-manual-image-categorization/},\n    edition = {Proceedings of 14th ACM Conference on Computer and Communications Security (CCS)},\n}\n",
+  "config_name": "default",
+  "dataset_name": "cats_vs_dogs",
+  "dataset_size": 3961842,
+  "description": "A large set of images of cats and dogs. There are 1738 corrupted images that are dropped.",
+  "download_checksums": {
+    "https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip": {
+      "num_bytes": 824887076,
+      "checksum": null
+    }
+  },
+  "download_size": 824887076,
+  "features": {
+    "image": {
+      "feature": {
+        "feature": {
+          "feature": {
+            "dtype": "float32",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "_type": "Sequence"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "names": [
+        "cat",
+        "dog"
+      ],
+      "_type": "ClassLabel"
+    }
+  },
+  "homepage": "https://www.microsoft.com/en-us/download/details.aspx?id=54765",
+  "license": "",
+  "size_in_bytes": 828848918,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 3961842,
+      "num_examples": 23410,
+      "dataset_name": "cats_vs_dogs"
+    }
+  },
+  "supervised_keys": {
+    "input": "image",
+    "output": "labels"
+  },
+  "task_templates": [],
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
